@@ -1,0 +1,29 @@
+/* Takeme.css */
+.carousel {
+    max-width: 100%;
+  }
+  
+  .carousel-inner {
+    max-height: 400px; /* Adjust the height as needed */
+  }
+  
+  .carousel-item {
+    text-align: center; /* Center the images horizontally */
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  /* Media query for responsiveness */
+  @media (min-width: 768px) {
+    .carousel {
+      max-width: 100%;
+    }
+  
+    .carousel-inner {
+      max-height: 800px; /* Adjust the height as needed for larger screens */
+    }
+  }
+  

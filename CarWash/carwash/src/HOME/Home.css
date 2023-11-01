@@ -1,0 +1,327 @@
+.bg {
+  padding-top: 250px;
+  background: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.8)),
+    url("./Img/bently.jpg");
+  height: 750px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.hd {
+  margin: auto;
+  font-size: 150px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+
+/* Add this CSS to your existing Home.css or a separate CSS file */
+
+/* Adjustments for small devices (e.g., smartphones) */
+@media only screen and (max-width: 768px) {
+  .hd {
+    font-size: 80px;
+    /* Reduce font size for headings */
+  }
+}
+
+/* Additional adjustments for extra small devices (e.g., small smartphones) */
+@media only screen and (max-width: 480px) {
+  .hd {
+    font-size: 60px;
+    /* Further reduce font size for headings */
+  }
+
+  /* You can add more responsive styling here as needed */
+}
+
+
+@media only screen and (max-width: 800px) {
+  .bg {
+    height: 500px;
+  }
+
+  .hd {
+    font-size: 150px;
+  }
+
+}
+
+@media only screen and (max-width: 391px) {
+  .bg {
+    height: 500px;
+
+  }
+
+  .hd {
+    font-size: 100px;
+  }
+
+}
+
+@media only screen and (max-width:259px) {
+  .bg {
+    height: 400px;
+  }
+
+  .hd {
+    font-size: 70px;
+  }
+}
+
+
+
+
+.cardi {
+  height: 500px;
+  background: #ffffff;
+  margin-top: 50px;
+
+
+
+
+
+}
+
+.car {
+  height: 400px;
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  .car {
+    height: 350px;
+
+  }
+
+
+}
+
+@media only screen and (max-width: 444px) {
+  .car {
+    height: 200px;
+  }
+
+
+}
+
+
+
+
+
+.hname {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: rgb(3, 3, 3);
+  text-align: center;
+  justify-content: center;
+  font-size: 60px;
+  font-weight: 400;
+  padding-bottom: 2%;
+}
+
+@media only screen and (max-width:653px) {
+  .hname {
+    padding-top: 30px;
+  }
+}
+
+@media only screen and (max-width:293px) {
+  .hname {
+    font-size: 50px;
+  }
+
+  .car {
+    width: 200px;
+    height: 200px;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.contcard {
+  width: 100%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+ 
+  gap: 10px;
+
+  >div {
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #040404;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("./Img/bentlynw.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(2) {
+      background: url("./Img/gtr.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(3) {
+      background: url("./Img/blkcamaro.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(4) {
+      background: url("./Img/yllow.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(5) {
+      background: url("./Img/spoiler.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(6) {
+      background: url("./Img/wheelalloy.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(7) {
+      background: url("./Img/exhaust.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(8) {
+      background: url("./Img/engine.jpg") no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(0deg,
+          rgba(2, 2, 46, 0.6755077030812324) 0%,
+          rgba(255, 255, 255, 0) 100%);
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+  @media (max-width: 768px) {
+    flex-direction: column;
+    
+    height: 900px;
+
+    > div {
+      margin-bottom: 20px;
+      width: 100%;
+      flex: auto;
+    }
+  }
+}
+
+.bookmarkBtn {
+  width: 100px;
+  height: 40px;
+  border-radius: 40px;
+  border: 1px solid rgba(255, 255, 255, 0.349);
+  background-color: rgb(12, 12, 12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition-duration: .3s;
+  overflow: hidden;
+  margin: 0 auto;
+  margin-bottom: 80px;
+}
+
+.IconContainer {
+  width: 30px;
+  height: 30px;
+  background: linear-gradient(to bottom, rgb(255, 136, 255), rgb(172, 70, 255));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  z-index: 2;
+  transition-duration: .3s;
+}
+
+.icon {
+  border-radius: 1px;
+}
+
+.text {
+  height: 100%;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  z-index: 1;
+  transition-duration: .3s;
+  font-size: 1.04em;
+  margin: 0;
+}
+
+.bookmarkBtn:hover .IconContainer {
+  width: 90px;
+  border-radius: 40px;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:hover .text {
+  transform: translate(10px);
+  width: 0;
+  font-size: 0;
+  transition-duration: .3s;
+}
+
+.bookmarkBtn:active {
+  transform: scale(0.95);
+  transition-duration: .3s;
+}
+@media only screen and (max-width : 770px){
+  .bookmarkBtn{
+  display: none;
+
+}
+}
+
+
