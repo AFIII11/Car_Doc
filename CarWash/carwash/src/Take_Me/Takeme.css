@@ -1,29 +1,66 @@
 /* Takeme.css */
 .carousel {
+  max-width: 100%;
+}
+
+.carousel-inner {
+  max-height: 400px;
+  /* Adjust the height as needed */
+}
+
+.carousel-item {
+  text-align: center;
+  /* Center the images horizontally */
+}
+
+.carousel-item img {
+  max-width: 100%;
+  height: auto;
+  /* Maintain aspect ratio */
+}
+
+/* Media query for responsiveness */
+@media (min-width: 768px) {
+  .carousel {
     max-width: 100%;
   }
-  
+
   .carousel-inner {
-    max-height: 400px; /* Adjust the height as needed */
+    max-height: 800px;
+    /* Adjust the height as needed for larger screens */
   }
-  
-  .carousel-item {
-    text-align: center; /* Center the images horizontally */
+}
+
+.doc {
+  margin-bottom: 500px;
+  margin-right: 800px;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-style: italic;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 100px;
+}
+@media only screen and (max-width: 1074px) {
+  .doc{
+    margin-bottom:200px ;
+    /* Reduce font size for headings */
   }
-  
-  .carousel-item img {
-    max-width: 100%;
-    height: auto; /* Maintain aspect ratio */
+}
+@media only screen and (max-width: 1006px) {
+  .doc{
+    margin-bottom:100px ;
+    /* Reduce font size for headings */
   }
-  
-  /* Media query for responsiveness */
-  @media (min-width: 768px) {
-    .carousel {
-      max-width: 100%;
-    }
-  
-    .carousel-inner {
-      max-height: 800px; /* Adjust the height as needed for larger screens */
-    }
+}
+@media only screen and (max-width: 830px) {
+  .doc{
+    margin-bottom:50px ;
+    /* Reduce font size for headings */
   }
-  
+}
+@media only screen and (max-width: 768px) {
+  .doc{
+   
+    /* Reduce font size for headings */
+  }
+}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './Takeme.css';
 import gtrn from './Img/gtrn.jpg';
 import wagon from './Img/wagon.jpg';
@@ -7,8 +7,12 @@ import blueferrari from './Img/blueferrari.jpg';
 import lambo from './Img/lambo.jpg';
 import supra from './Img/supra.jpg';
 import Homemain from '../HOME_NAVBAR/Homemain';
+import Aos from 'aos';
 
 export default function Takeme() {
+  useEffect(() => {
+    Aos.init();
+  }, []);
   return (
     <>
       <div id="carouselExampleIndicators" class="carousel slide">
@@ -23,9 +27,13 @@ export default function Takeme() {
 
 
   </div>
+  
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src={gtrn} class="d-block w-100" alt="..."></img>
+      <div class="carousel-caption d-none d-md-block">
+        <h5 className='doc' data-aos="zoom-in"  data-aos-delay=".6s">TaKe A LooK</h5>
+      </div>
     </div>
     <div class="carousel-item">
       <img src={bently1} class="d-block w-100" alt="..."></img>
