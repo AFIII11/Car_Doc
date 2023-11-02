@@ -58,3 +58,44 @@
     /* Reduce font size for headings */
   }
 }
+@media only screen and (max-width: 767px) {
+  .d-none{
+    display: block !important ;
+    /* Reduce font size for headings */
+  }
+}
+@media only screen and (max-width: 767px) {
+  .doc{
+    margin-bottom:50px ;
+    /* Reduce font size for headings */
+  }
+}
+@media only screen and (max-width: 760px) {
+  .doc{
+    margin-bottom:10px ;
+    font-size: 70px;
+    /* Reduce font size for headings */
+  }
+}
+@media only screen and (max-width: 508px) {
+  .doc{
+    margin-bottom:6px ;
+    font-size: 50px;
+    /* Reduce font size for headings */
+  }
+}
+@media only screen and (max-width: 383px) {
+  .doc{
+    margin-bottom:1px ;
+    font-size: 40px;
+    /* Reduce font size for headings */
+  }
+}
+@media only screen and (max-width: 315px) {
+  .doc{
+    margin-bottom:10px ;
+    font-size: 20px;
+    /* Reduce font size for headings */
+  }
+}
+

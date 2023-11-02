@@ -14,7 +14,7 @@ export default function Home() {
       <Homemain/>
       <div className="bg">
         
-        <h1 className="hd" data-aos="zoom-in"  data-aos-delay=".6s" >CarS.DoC</h1>
+        <h1 className="hd" data-aos="zoom-in"  data-aos-delay=".10s" >CarS.DoC</h1>
       </div>
 
       <div className="cardi">

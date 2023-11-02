@@ -32,7 +32,7 @@ export default function Takeme() {
     <div class="carousel-item active">
       <img src={gtrn} class="d-block w-100" alt="..."></img>
       <div class="carousel-caption d-none d-md-block">
-        <h5 className='doc' data-aos="zoom-in"  data-aos-delay=".6s">TaKe A LooK</h5>
+        <h5 className='doc' data-aos="zoom-in"  data-aos-delay=".10s">TaKe A LooK</h5>
       </div>
     </div>
     <div class="carousel-item">
