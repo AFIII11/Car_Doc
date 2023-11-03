@@ -3,6 +3,7 @@ import './Home.css';
 import Aos from 'aos';
 import Button from '../BUTTON/Button';
 import Homemain from '../HOME_NAVBAR/Homemain';
+import Footer from '../FOOTER/Footer';
 
 export default function Home() {
   useEffect(() => {
@@ -74,6 +75,7 @@ export default function Home() {
       </div>
 
       <Button />
+      <Footer/>
     </div>
   );
 }

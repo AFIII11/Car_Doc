@@ -22,7 +22,7 @@ export default function Homemain() {
           <a class="nav-link text-white" href="/Price">Pricing</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#"></a>
+          <a class="nav-link text-white" href="/Review">Review</a>
         </li>
       </ul>
     </div>

@@ -6,6 +6,8 @@ import Takeme from './Take_Me/Takeme';
 import Button from './BUTTON/Button';
 import Homemain from './HOME_NAVBAR/Homemain';
 import Pricing from './PRICING/Pricing';
+import Review from './REVIEW/Review';
+import Footer from './FOOTER/Footer';
 
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
     <Route path='/Takeme' element={<Takeme></Takeme>}/>
     <Route path= '/button' element={<Button></Button>}/>
     <Route path='/homemain' element={<Homemain></Homemain>}/>
+    <Route path='/review'  element={<Review></Review>}/>
+    <Route path='footer' element={<Footer></Footer>}/>
    
 
 
