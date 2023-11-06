@@ -24,6 +24,9 @@ export default function Homemain() {
         <li class="nav-item">
           <a class="nav-link text-white" href="/Review">Review</a>
         </li>
+        <li class="nav-item">
+          <a class="nav-link text-white" href="/Login">Login</a>
+        </li>
       </ul>
     </div>
   </div>

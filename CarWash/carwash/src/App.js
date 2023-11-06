@@ -8,6 +8,8 @@ import Homemain from './HOME_NAVBAR/Homemain';
 import Pricing from './PRICING/Pricing';
 import Review from './REVIEW/Review';
 import Footer from './FOOTER/Footer';
+import Login from './LOGIN/Login';
+import Register from './REGISTER/Register';
 
 
 function App() {
@@ -20,7 +22,9 @@ function App() {
     <Route path= '/button' element={<Button></Button>}/>
     <Route path='/homemain' element={<Homemain></Homemain>}/>
     <Route path='/review'  element={<Review></Review>}/>
-    <Route path='footer' element={<Footer></Footer>}/>
+    <Route path='/footer' element={<Footer></Footer>}/>
+    <Route path='/login' element={<Login></Login>}/>
+    <Route path='/Register' element={<Register></Register>}/>
    
 
 
