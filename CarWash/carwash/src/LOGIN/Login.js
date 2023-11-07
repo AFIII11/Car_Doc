@@ -15,7 +15,7 @@ export default function Login() {
   <form>
     <div class="user-box">
       <input required="" name="" type="text"></input>
-      <label>Email</label>
+      <label>Username</label>
     </div>
     <div class="user-box">
       <input required="" name="" type="password"></input>

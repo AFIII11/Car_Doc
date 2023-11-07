@@ -12,26 +12,28 @@ export default function Register() {
   <p>Register</p>
   <form>
     <div class="user-box">
-      <input required="" name="" type="text"></input>
+      <input required="" name="name" type="text"></input>
       <label>FirstName</label>
     </div>
     <div class="user-box">
-      <input required="" name="" type="text"></input>
+      <input required="" name="lastname" type="text"></input>
       <label>LastName</label>
     </div>
     
     <div class="user-box">
-      <input required="" name="" type="number"></input>
-      <label>PhoneNumber</label>
-    </div>
-    <div class="user-box">
-      <input required="" name="" type="text"></input>
+      <input required="" name="email" type="text"></input>
       <label>Email</label>
     </div>
     <div class="user-box">
-      <input required="" name="" type="password"></input>
+      <input required="" name="username" type="text"></input>
+      <label>Username</label>
+    </div>
+    <div class="user-box">
+      <input required="" name="password" type="password"></input>
       <label>Password</label>
     </div>
+    
+    
     <a href="#">
       <span></span>
       <span></span>
