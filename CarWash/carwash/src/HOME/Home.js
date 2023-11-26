@@ -26,7 +26,7 @@ export default function Home() {
           <div className="column col-lg-3 col-md-6 col-sm-6">
             <div className="content">
               <h2>Car Wash</h2>
-              <span>Premium Service</span>
+              <span>Premium Service </span>
             </div>
           </div>
           <div className="column col-lg-3 col-md-6 col-sm-6">

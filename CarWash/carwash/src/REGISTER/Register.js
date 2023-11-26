@@ -1,8 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Register.css';
 import Homemain from '../HOME_NAVBAR/Homemain';
+import axios from 'axios';
 
 export default function Register() {
+const [state,setState] = useState()
+  const inputChange = (e)=>{
+    const {name,value} = e.target
+    setState({...state,[name]:value})
+  }
+  const submit = ()=>{
+    console.log(state);
+    axios.post('http://127.0.0.1:8000/api/UserRegisterSerializerAPIView',state).then((response)=>{
+      console.log(response);
+    }).catch((error)=>{
+      console.log(error);
+    })
+  }
   return (
     <>
     <Homemain/>
@@ -12,29 +26,29 @@ export default function Register() {
   <p>Register</p>
   <form>
     <div class="user-box">
-      <input required="" name="name" type="text"></input>
+      <input required="" name="name" type="text" onChange={inputChange}></input>
       <label>FirstName</label>
     </div>
     <div class="user-box">
-      <input required="" name="lastname" type="text"></input>
+      <input required="" name="lastName" type="text" onChange={inputChange}></input>
       <label>LastName</label>
     </div>
     
     <div class="user-box">
-      <input required="" name="email" type="text"></input>
+      <input required="" name="email" type="text" onChange={inputChange}></input>
       <label>Email</label>
     </div>
     <div class="user-box">
-      <input required="" name="username" type="text"></input>
+      <input required="" name="username" type="text" onChange={inputChange}></input>
       <label>Username</label>
     </div>
     <div class="user-box">
-      <input required="" name="password" type="password"></input>
+      <input required="" name="password" type="password" onChange={inputChange}></input>
       <label>Password</label>
     </div>
     
     
-    <a href="#">
+    <a href="#" onClick={submit}>
       <span></span>
       <span></span>
       <span></span>
@@ -42,7 +56,7 @@ export default function Register() {
       Submit
     </a>
   </form>
-  <p>Allready Have An Account ? <a href="/Login" class="a2">Login!</a></p>
+  <p><u>Allready Have An Account ? </u><a href="/Login" class="a2"><u>Login!</u></a></p>
 </div>
     </div>
     </>

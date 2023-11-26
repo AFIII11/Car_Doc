@@ -113,7 +113,7 @@ export default function Pricing() {
           <img src={interiornew} class="card-img-top img-fluid" alt="..."></img>
           <div class="card-body">
             <h5 class="card-title" data-aos="fade-right" data-aos-delay=".6s">Interior</h5><br></br>
-            <p class="card-text">Car Lights Price Range	No of Products(%)(INR).<br></br>
+            <p class="card-text">Car Interior Price Range	No of Products(%)(INR).<br></br>
               Rs 230 - 380	19%<br></br>
               Rs 380 - 640	10%<br></br>
               Rs 640 - 1100	29%<br></br>

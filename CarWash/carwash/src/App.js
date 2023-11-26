@@ -10,6 +10,9 @@ import Review from './REVIEW/Review';
 import Footer from './FOOTER/Footer';
 import Login from './LOGIN/Login';
 import Register from './REGISTER/Register';
+import Booking from './BOOKING/Booking';
+import View from './VIEW/View';
+import Bookingview from './VIEW/Bookingview';
 
 
 function App() {
@@ -25,6 +28,9 @@ function App() {
     <Route path='/footer' element={<Footer></Footer>}/>
     <Route path='/login' element={<Login></Login>}/>
     <Route path='/Register' element={<Register></Register>}/>
+    <Route path='/Booking' element={<Booking></Booking>}/>
+    <Route path='/View' element={<View></View>}/>
+    <Route path={`/Bookingview/:id`} element={<Bookingview />} />
    
 
 

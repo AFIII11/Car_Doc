@@ -6,17 +6,17 @@ export default function Footer() {
     <div>
       <ul className='uln'>
   <li>
-    <a href="#">
+    <a href="https://github.com/AFIII11">
       <i class="fab fa-github"></i>
     </a>
   </li>
   <li>
-    <a href="#">
+    <a href="https://www.instagram.com/_afnaa.n/">
       <i class="fab fa-instagram"></i>
     </a>
     </li>
   <li>
-    <a href="#">
+    <a href="www.linkedin.com/in/afnan0010">
       <i class="fab fa-linkedin"></i>
     </a>
     
