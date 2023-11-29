@@ -7,11 +7,13 @@
 
 }
 .viewinner{
-    width: 300px;
+    width: 400px;
     background: darkgray;
     padding: 20px;
     border-radius: 10px;
+    margin-top: 70px;
 }
+
 .mainnn{
     background: #000;
     background: linear-gradient(rgba(0, 0, 0, 0.3),
@@ -24,3 +26,37 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+/* For smaller devices */
+@media screen and (max-width: 632px) {
+    /* Adjust styles here */
+    .mainnn {
+      /* Example: Modify the width or layout for smaller screens */
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .viewcard {
+      /* Example: Adjust display or layout for smaller screens */
+      display: flex;
+      flex-direction: column;
+    }
+  
+    /* Add other responsive styles as needed */
+  }
+  @media screen and (max-width: 410px) {
+    /* Adjust styles here */
+    .mainnn {
+      /* Example: Modify the width or layout for smaller screens */
+      width: 100%;
+      padding: 10px;
+    }
+  
+    .viewcard {
+      /* Example: Adjust display or layout for smaller screens */
+      display: flex;
+      flex-direction:column;
+    }
+  
+    /* Add other responsive styles as needed */
+  }
+  

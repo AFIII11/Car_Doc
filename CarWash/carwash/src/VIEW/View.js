@@ -61,32 +61,42 @@ function View() {
         console.log(error);
     })
   }
-    return (
-        <div className='mainnn'>
+   
+        return (
+            <div className='mainnn'>
+              <div className='viewcard'>
+                {state?.map((value, key) => (
+                  <div className='viewinner' key={key}>
+                    <Homemain />
+                    <div className="details">
+                      <div className="info">
+                        <Typography variant="h6">{value.name}</Typography>
+                        <Typography variant="body1">{value.lastName}</Typography>
+                        <Typography variant="body2">{value.email}</Typography>
+                      </div>
+                      <div className="actions">
+                        <button className='btn bg-secondary mt-3' onClick={() => Gotobooking(value.log_id)}>Show Booking</button>
+                        <Button onClick={handleOpen}>Reply</Button>
+                        <Modal
+                          open={open}
+                          onClose={handleClose}
+                          aria-labelledby="modal-modal-title"
+                          aria-describedby="modal-modal-description"
+                        >
+                          <Box sx={style}>
+                            <label style={{ color: 'black' }}>Type your message</label>
+                            <input type='text' name='subject' onChange={(e) => inputchange(e, value.email)}></input>
+                            <button className='btn bg-secondary mt-2' onClick={Send}>Send</button>
+                          </Box>
+                        </Modal>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+          );
+        }
         
-        <div className='viewcard'>{state?.map((value, key) => (
-            <div className='viewinner'>
-                <Homemain/>
-                <li>{value.name}</li>
-                <li>{value.lastName}</li>
-                <li>{value.email}</li>
-                <button className='btn bg-secondary mt-3' onClick={() => Gotobooking(value.log_id)}>Show Booking</button>
-                <Button onClick={handleOpen}>Reply</Button>
-      <Modal
-        open={open}
-        onClose={handleClose}
-        aria-labelledby="modal-modal-title"
-        aria-describedby="modal-modal-description"
-      >
-        <Box sx={style}>
-        <label style={{color:'black'}}>Type your message</label>
-         <input type='text' name='subject' onChange={(e)=>inputchange(e,value.email)}></input>
-         <button className='btn bg-secondary mt-2' onClick={Send}>Send</button>
-        </Box>
-      </Modal> </div>
-        ))}</div>
-        </div>
-    )
-}
-
-export default View
+        export default View;
+        
