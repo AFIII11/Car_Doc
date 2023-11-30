@@ -1,6 +1,8 @@
 import React, { useState } from 'react'
 import './Register.css';
 import Homemain from '../HOME_NAVBAR/Homemain';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import axios from 'axios';
 
 export default function Register() {
@@ -13,6 +15,16 @@ const [state,setState] = useState()
     console.log(state);
     axios.post('http://127.0.0.1:8000/api/UserRegisterSerializerAPIView',state).then((response)=>{
       console.log(response);
+      toast.success('Registered Successfully', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     }).catch((error)=>{
       console.log(error);
     })
@@ -21,7 +33,7 @@ const [state,setState] = useState()
     <>
     <Homemain/>
     <div className='bgnn'>
-        
+        <ToastContainer/>
     <div class="login-box">
   <p>Register</p>
   <form>

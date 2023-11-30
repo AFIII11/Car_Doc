@@ -11,3 +11,35 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card li {
+    margin-bottom: 10px;
+  }
+  
+  .categorydiv {
+    margin-top: 10px;
+  }
+  
+  /* Add your additional styles as needed */
+  

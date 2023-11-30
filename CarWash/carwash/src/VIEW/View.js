@@ -7,6 +7,9 @@ import Modal from '@mui/material/Modal';
 import Button from '@mui/material/Button'; 
 import Typography from '@mui/material/Typography';
 import Homemain from '../HOME_NAVBAR/Homemain';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 
@@ -57,6 +60,16 @@ function View() {
   const Send=()=>{
     axios.post('http://127.0.0.1:8000/api/sendmailmethod',maildata).then((res)=>{
         console.log(res);
+        toast.success('Message Sent Successfully', {
+          position: "top-center",
+          autoClose: 5000,
+          hideProgressBar: false,
+          closeOnClick: true,
+          pauseOnHover: true,
+          draggable: true,
+          progress: undefined,
+          theme: "dark",
+          });
     }).catch((error)=>{
         console.log(error);
     })
@@ -64,6 +77,7 @@ function View() {
    
         return (
             <div className='mainnn'>
+              <ToastContainer/>
               <div className='viewcard'>
                 {state?.map((value, key) => (
                   <div className='viewinner' key={key}>
@@ -100,3 +114,5 @@ function View() {
         
         export default View;
         
+
+

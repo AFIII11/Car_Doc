@@ -1,10 +1,13 @@
 import React, { useEffect, useState } from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Homemain from '../HOME_NAVBAR/Homemain';
 import './Booking.css';
 import axios from 'axios'
 
 
 export default function Booking() {
+ 
   const login_id=localStorage.getItem('login_id')
   const [showOptions, setShowOptions] = useState(false); 
   const [state,setState]=useState(
@@ -33,6 +36,16 @@ export default function Booking() {
    const submit=()=>{
     axios.post('http://127.0.0.1:8000/api/bookingmethod',state).then((res)=>{
       console.log(res);
+      toast.success(' Booking Completed', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
     }).catch((error)=>{
       console.log(error);
     })
@@ -50,6 +63,7 @@ export default function Booking() {
     <>
       <Homemain />
       <div className='bgnn'>
+        <ToastContainer/>
         <div className="login-box">
           <p>Booking</p>
           <form>
@@ -88,8 +102,10 @@ export default function Booking() {
             </div>
             <a href="#" onClick={submit}>
               
+              
               Submit
             </a>
+            
           </form>
           <p><a>Allready Have An Account ?</a> <a href="/Login" className="a2">Login!</a></p>
         </div>

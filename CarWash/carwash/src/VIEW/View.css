@@ -1,37 +1,46 @@
-.viewcard{
-    display: flex;
-    justify-content: space-evenly;
-    gap: 10px;
+.viewcard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 100%; /* Set width to fill the available space */
+  max-width: 500px; /* Set a maximum width if needed */
+  margin: 0 auto; /* Center the container horizontally */
+}
+
+
    
     
 
-}
+
 .viewinner{
-    width: 400px;
+   
     background: darkgray;
     padding: 20px;
     border-radius: 10px;
     margin-top: 70px;
+    
 }
 
 .mainnn{
-    background: #000;
-    background: linear-gradient(rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.8)),
-      url("./Img/car.jpg");
-    height: 800px;
-  
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  background: #000;
+  background: linear-gradient(rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.8)),
+    url("./Img/car.jpg");
+  height: 800px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* For smaller devices */
-@media screen and (max-width: 632px) {
+@media screen and (max-width: 1023px) {
     /* Adjust styles here */
     .mainnn {
       /* Example: Modify the width or layout for smaller screens */
-      width: 100%;
+      
       padding: 10px;
     }
   
@@ -39,6 +48,7 @@
       /* Example: Adjust display or layout for smaller screens */
       display: flex;
       flex-direction: column;
+      width: 300px;
     }
   
     /* Add other responsive styles as needed */
@@ -47,7 +57,7 @@
     /* Adjust styles here */
     .mainnn {
       /* Example: Modify the width or layout for smaller screens */
-      width: 100%;
+      
       padding: 10px;
     }
   
@@ -59,4 +69,23 @@
   
     /* Add other responsive styles as needed */
   }
+  @media screen and (max-width: 382px) {
+    /* Adjust styles here */
+    .mainnn {
+      /* Example: Modify the width or layout for smaller screens */
+      
+      padding: 10px;
+    }
   
+    .viewcard {
+      /* Example: Adjust display or layout for smaller screens */
+      display: flex;
+      flex-direction: column;
+      width: 200px;
+    }
+  
+    /* Add other responsive styles as needed */
+  }
+  
+  
+    
